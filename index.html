@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="sr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ius Tutor - Vaš put do položenog ispita</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+      body {
+        font-family: "Inter", sans-serif;
+      }
+      .gradient-bg {
+        background: linear-gradient(
+          135deg,
+          #1e3a8a 0%,
+          #3b82f6 50%,
+          #60a5fa 100%
+        );
+      }
+      .contact-btn {
+        transition: all 0.3s ease;
+        transform: translateY(0);
+      }
+      .contact-btn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+      }
+      .pulse-animation {
+        animation: pulse 2s infinite;
+      }
+      @keyframes pulse {
+        0%,
+        100% {
+          opacity: 1;
+        }
+        50% {
+          opacity: 0.7;
+        }
+      }
+    </style>
+  </head>
+  <body class="min-h-screen bg-gray-50">
+    <!-- Hero Section -->
+    <section class="gradient-bg text-white py-20 px-4">
+      <div class="max-w-4xl mx-auto text-center">
+        <h1 class="text-5xl md:text-7xl font-bold mb-6 tracking-tight">
+          IUS TUTOR
+        </h1>
+        <p class="text-xl md:text-2xl font-medium mb-8 opacity-90">
+          ✨ Vaš put do položenog ispita!
+        </p>
+
+        <!-- Development Notice -->
+        <div
+          class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 mb-8 border border-white/20"
+        >
+          <div
+            class="flex items-center justify-center gap-3 text-lg md:text-xl font-semibold"
+          >
+            <span class="text-2xl pulse-animation">⚖️</span>
+            <span>U izradi: Sistem polaganja pravosudnog ispita!</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Available Classes Section -->
+    <section class="py-16 px-4">
+      <div class="max-w-4xl mx-auto text-center">
+        <div
+          class="bg-white rounded-3xl shadow-xl p-8 md:p-12 border border-gray-100"
+        >
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
+            Dostupni časovi
+          </h2>
+
+          <div class="space-y-6">
+            <div
+              class="flex items-center justify-center gap-4 text-lg md:text-xl text-gray-700"
+            >
+              <span class="text-3xl">📘</span>
+              <span class="font-medium"
+                >Privatni časovi iz Međunarodnog privatnog prava (MPP)</span
+              >
+            </div>
+
+            <div class="bg-green-50 rounded-2xl p-6 border-2 border-green-200">
+              <div
+                class="flex items-center justify-center gap-4 text-lg md:text-xl text-green-800 font-semibold"
+              >
+                <span class="text-3xl">👩‍🎓</span>
+                <span
+                  >Preko 900 zadovoljnih studenata položilo je MPP uz
+                  časove!</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-16 px-4 bg-gray-100">
+      <div class="max-w-4xl mx-auto text-center">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-12">
+          Kontakt:
+        </h2>
+
+        <div class="grid md:grid-cols-3 gap-6">
+          <!-- WhatsApp -->
+          <a
+            href="https://wa.me/381604321068"
+            target="_blank"
+            class="contact-btn bg-green-500 hover:bg-green-600 text-white rounded-2xl p-8 block"
+          >
+            <div class="text-5xl mb-4">📱</div>
+            <div class="text-xl font-semibold mb-2">WhatsApp</div>
+            <div class="text-green-100">Pošaljite poruku</div>
+          </a>
+
+          <!-- Viber -->
+          <a
+            href="viber://chat?number=%2B381604321068"
+            class="contact-btn bg-purple-500 hover:bg-purple-600 text-white rounded-2xl p-8 block"
+          >
+            <div class="text-5xl mb-4">💬</div>
+            <div class="text-xl font-semibold mb-2">Viber</div>
+            <div class="text-purple-100">Otvorite chat</div>
+          </a>
+
+          <!-- Phone -->
+          <a
+            href="tel:+381604321068"
+            class="contact-btn bg-blue-500 hover:bg-blue-600 text-white rounded-2xl p-8 block"
+          >
+            <div class="text-5xl mb-4">📞</div>
+            <div class="text-xl font-semibold mb-2">Telefon</div>
+            <div class="text-blue-100">060/432-1068</div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8 px-4">
+      <div class="max-w-4xl mx-auto text-center">
+        <p class="text-lg">© 2025 Dejan Bajović | 📞 060/432-1068</p>
+      </div>
+    </footer>
+    <script>
+      (function () {
+        function c() {
+          var b = a.contentDocument || a.contentWindow.document;
+          if (b) {
+            var d = b.createElement("script");
+            d.innerHTML =
+              "window.__CF$cv$params={r:'970bc0da13458e88',t:'MTc1NTQ2MDc4MS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";
+            b.getElementsByTagName("head")[0].appendChild(d);
+          }
+        }
+        if (document.body) {
+          var a = document.createElement("iframe");
+          a.height = 1;
+          a.width = 1;
+          a.style.position = "absolute";
+          a.style.top = 0;
+          a.style.left = 0;
+          a.style.border = "none";
+          a.style.visibility = "hidden";
+          document.body.appendChild(a);
+          if ("loading" !== document.readyState) c();
+          else if (window.addEventListener)
+            document.addEventListener("DOMContentLoaded", c);
+          else {
+            var e = document.onreadystatechange || function () {};
+            document.onreadystatechange = function (b) {
+              e(b);
+              "loading" !== document.readyState &&
+                ((document.onreadystatechange = e), c());
+            };
+          }
+        }
+      })();
+    </script>
+  </body>
+</html>
