@@ -205,5 +205,38 @@
         }
       })();
     </script>
+    <script>
+      // Funkcija za slanje događaja u GA
+      function trackClick(eventName, extra = {}) {
+        if (typeof gtag === "function") {
+          gtag(
+            "event",
+            eventName,
+            Object.assign(
+              {
+                event_category: "Kontakt",
+                event_label: location.pathname,
+              },
+              extra
+            )
+          );
+        }
+      }
+
+      // WhatsApp klik
+      document.querySelectorAll('a[href^="https://wa.me/"]').forEach((a) => {
+        a.addEventListener("click", () => trackClick("click_whatsapp"));
+      });
+
+      // Viber klik
+      document.querySelectorAll('a[href^="viber://"]').forEach((a) => {
+        a.addEventListener("click", () => trackClick("click_viber"));
+      });
+
+      // Telefon klik
+      document.querySelectorAll('a[href^="tel:"]').forEach((a) => {
+        a.addEventListener("click", () => trackClick("click_phone"));
+      });
+    </script>
   </body>
 </html>
